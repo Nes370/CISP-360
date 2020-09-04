@@ -9,8 +9,8 @@ public class MilesPerGallon {
 	public static void main(String[] args) {
 		
 		System.out.println("A car that holds " + GALLONS
-				+ " gallons of gas and drives " + MILES + " miles gets\n"
-				+ ((double) MILES / GALLONS) + " miles per gallon of gas.");
+			+ " gallons of gas and drives " + MILES + " miles gets\n"
+			+ ((double) MILES / GALLONS) + " miles per gallon of gas.");
 		
 	}
 	
