@@ -16,14 +16,14 @@ public class Gearbox {
 					maximumSpeed = s.nextDouble();
 					
 					if(minimumSpeed <= 0 || maximumSpeed <= 0) {
-						valid = false;
 						System.out.println("You must enter two positive number values. Please try again.");
+						valid = false;
 					}
 					else valid = true;
 				} catch(InputMismatchException ime) {
+					System.out.println("Your input was invalid. Please try again.");
 					s.nextLine();
 					valid = false;
-					System.out.println("Your input was invalid. Please try again.");
 				}
 			} while(!valid);
 		}
