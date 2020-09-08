@@ -1,3 +1,4 @@
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Gearbox {
@@ -5,10 +6,27 @@ public class Gearbox {
 	public static void main(String[] args) {
 		
 		Scanner s = new Scanner(System.in);
-		double maximumSpeed, minimumSpeed;
-		System.out.print("Enter a minimum and maximum speed (in revolutions per minute): ");
-		minimumSpeed = s.nextDouble();
-		maximumSpeed = s.nextDouble();
+		double minimumSpeed = 0, maximumSpeed = 0;
+		{
+			boolean valid;
+			do {
+				try {
+					System.out.print("Enter a minimum and maximum speed (in revolutions per minute): ");
+					minimumSpeed = s.nextDouble();
+					maximumSpeed = s.nextDouble();
+					
+					if(minimumSpeed <= 0 || maximumSpeed <= 0) {
+						valid = false;
+						System.out.println("You must enter two positive number values. Please try again.");
+					}
+					else valid = true;
+				} catch(InputMismatchException ime) {
+					s.nextLine();
+					valid = false;
+					System.out.println("Your input was invalid. Please try again.");
+				}
+			} while(!valid);
+		}
 		s.close();
 
 	    if(maximumSpeed < minimumSpeed) {
