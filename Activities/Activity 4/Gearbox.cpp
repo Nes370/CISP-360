@@ -12,9 +12,9 @@ int main() {
 
     while(cin.fail() || minimumSpeed <= 0 || maximumSpeed <= 0) {
         if(cin.fail()) {
-            cout << "Your input was invalid. Please try again." << endl;
             cin.clear();
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
+            cout << "Your input was invalid. Please try again." << endl;
         } else {
             cout << "You must enter two positive number values. Please try again." << endl;
         }
