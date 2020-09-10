@@ -24,7 +24,7 @@ public class Activity5 {
 		totalAmountPaid = monthlyPayment * numberOfMonths;
 		
 		System.out.printf("%24s  $ %8.2f%n", "Loan Amount:", loanAmount);
-		System.out.printf("%24s    %8.2f%n", "Monthly Interest Rate:", monthlyRate * 100);
+		System.out.printf("%24s    %8.2f%%%n", "Monthly Interest Rate:", monthlyRate * 100);
 		System.out.printf("%24s    %5d%n", "Number of Payments:", numberOfMonths);
 		System.out.printf("%24s  $ %8.2f%n", "Monthly Payment:", monthlyPayment);
 		System.out.printf("%24s  $ %8.2f%n", "Amount Paid Back:", totalAmountPaid);

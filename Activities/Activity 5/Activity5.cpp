@@ -7,7 +7,7 @@
  */
 
 #include <cmath> // for pow function
-#include <iomanip> //for formatting output
+#include <iomanip> // for formatting output
 #include <iostream> // for user input/output
 
 using namespace std;
