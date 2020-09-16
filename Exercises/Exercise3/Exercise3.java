@@ -33,7 +33,7 @@ public class Exercise3 {
 		System.out.println(((first) ? 1 : 0) + " " + first);
 		System.out.println(second + " 0x" + Integer.toHexString(second) + " 0" + Integer.toOctalString(second));
 		System.out.printf("%16d%n", third);
-		System.out.printf(((fourth < 0) ? '-' : '+') + "%12.0f.%n", Math.abs(fourth));
+		System.out.printf(((fourth < 0) ? '-' : '+') + "%11.0f.%n", Math.abs(fourth));
 		System.out.printf("%15.4e%n", fourth);
 		System.out.printf("%.7e%n", fifth);
 		System.out.printf("%17.3f%n", fifth);
