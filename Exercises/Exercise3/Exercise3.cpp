@@ -4,6 +4,7 @@
  */
 #include <iostream>
 #include <iomanip>
+#include <cmath>
 
 using namespace std;
 
@@ -26,7 +27,7 @@ int main() {
     cout << second << ' ' << hex << showbase << second << ' ' << oct << second << endl;
     cout << setw(16) << dec << third << endl;
     // Is there a way to accomplish this using only manipulators?
-    cout << ((fourth < 0) ? '-' : '+') << setw(12) << setprecision(4) << right << showpoint << abs(fourth) << endl;
+    cout << ((fourth < 0) ? '-' : '+') << setw(12) << setprecision(4) << right << showpoint << fabs(fourth) << endl;
     cout << setw(15) << scientific << setprecision(4) << fourth << endl;
     cout << setprecision(7) << fifth << endl;
     cout << setw(17) << fixed << setprecision(3) << fifth << endl;
