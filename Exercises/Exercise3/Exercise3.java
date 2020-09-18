@@ -1,5 +1,3 @@
-package cisp360;
-
 import java.util.Scanner;
 
 public class Exercise3 {
