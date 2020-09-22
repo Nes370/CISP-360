@@ -11,7 +11,7 @@
 
 using namespace std;
 
-int main0() {
+int main() {
 
     bool quit, repeat;
     char c;
